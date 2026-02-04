@@ -1,0 +1,120 @@
+'use client';
+
+import { useEffect } from 'react';
+import { SOCIAL_LINKS } from '@/lib/constants';
+import { useTranslation } from '@/i18n';
+
+interface SocialModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
+
+const socialPlatforms = [
+    {
+        name: 'Facebook',
+        url: SOCIAL_LINKS.facebook,
+        icon: (
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+        ),
+        bgColor: 'bg-[#1877F2]',
+        hoverColor: 'hover:bg-[#166FE5]',
+    },
+    {
+        name: 'Instagram',
+        url: SOCIAL_LINKS.instagram,
+        icon: (
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+        ),
+        bgColor: 'bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737]',
+        hoverColor: 'hover:opacity-90',
+    },
+    {
+        name: 'Zalo',
+        url: SOCIAL_LINKS.zalo,
+        icon: <span className="text-lg font-bold">Zalo</span>,
+        bgColor: 'bg-[#0068FF]',
+        hoverColor: 'hover:bg-[#0055CC]',
+    },
+];
+
+export default function SocialModal({ isOpen, onClose }: SocialModalProps) {
+    const { t } = useTranslation();
+
+    // Close on escape key
+    useEffect(() => {
+        const handleEscape = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') onClose();
+        };
+        if (isOpen) {
+            document.addEventListener('keydown', handleEscape);
+            document.body.style.overflow = 'hidden';
+        }
+        return () => {
+            document.removeEventListener('keydown', handleEscape);
+            document.body.style.overflow = '';
+        };
+    }, [isOpen, onClose]);
+
+    if (!isOpen) return null;
+
+    return (
+        <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="social-title"
+        >
+            {/* Backdrop */}
+            <div
+                className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+                onClick={onClose}
+            />
+
+            {/* Modal */}
+            <div className="relative bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl">
+                {/* Header */}
+                <div className="text-center mb-6">
+                    <div className="text-4xl mb-2">📱</div>
+                    <h2 id="social-title" className="text-xl font-bold text-gray-800">
+                        {t.social.title}
+                    </h2>
+                    <p className="text-sm text-gray-500 mt-1">
+                        {t.social.subtitle}
+                    </p>
+                </div>
+
+                {/* Social Buttons */}
+                <div className="space-y-3 mb-6">
+                    {socialPlatforms.map((platform) => (
+                        <a
+                            key={platform.name}
+                            href={platform.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center gap-4 w-full py-3 px-4 rounded-xl 
+                         text-white font-medium transition-all 
+                         ${platform.bgColor} ${platform.hoverColor}`}
+                        >
+                            {platform.icon}
+                            <span>{platform.name}</span>
+                        </a>
+                    ))}
+                </div>
+
+                {/* Close Button */}
+                <button
+                    onClick={onClose}
+                    className="w-full py-3 border border-gray-300 rounded-xl
+                     text-gray-700 font-medium
+                     hover:bg-gray-50 transition-colors"
+                >
+                    {t.social.close}
+                </button>
+            </div>
+        </div>
+    );
+}

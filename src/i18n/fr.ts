@@ -1,0 +1,51 @@
+// French translations
+import { Translations } from './en';
+
+export const fr: Translations = {
+    header: {
+        welcome: 'Bienvenue à The Cliff Resort',
+        tagline: 'Votre confort, notre priorité',
+        connectWifi: 'Connecter WiFi',
+    },
+    services: {
+        home: 'Accueil',
+        vistaRestaurant: 'Restaurant Vista',
+        bookTable: 'Réserver une table',
+        zestSpa: 'Zest Spa',
+        frontDesk: 'Réception',
+        housekeeping: 'Service d\'étage',
+        bookRoom: 'Réserver une chambre',
+        guestServices: 'Services aux clients',
+        activities: 'Activités',
+        shareMemory: 'Partager un souvenir',
+        socialMedia: 'Réseaux sociaux',
+    },
+    footer: {
+        hotline: 'Ligne directe',
+        copyright: '© 2026 The Cliff Resort. Tous droits réservés.',
+    },
+    wifi: {
+        title: 'Connexion WiFi',
+        networkName: 'Nom du réseau (SSID)',
+        password: 'Mot de passe',
+        copy: 'Copier',
+        copied: 'Copié!',
+        howToConnect: 'Comment se connecter:',
+        step1: 'Ouvrez les Paramètres sur votre téléphone',
+        step2: 'Appuyez sur WiFi',
+        step3: 'Sélectionnez le réseau',
+        step4: 'Entrez le mot de passe ci-dessus',
+        gotIt: 'Compris!',
+    },
+    emergency: {
+        title: 'Appel d\'urgence',
+        message: 'Appeler la sécurité et l\'assistance médicale?',
+        cancel: 'Annuler',
+        callNow: 'Appeler',
+    },
+    social: {
+        title: 'Suivez-nous',
+        subtitle: 'Restez connecté avec The Cliff Resort',
+        close: 'Fermer',
+    },
+};

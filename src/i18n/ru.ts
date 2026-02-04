@@ -1,0 +1,51 @@
+// Russian translations
+import { Translations } from './en';
+
+export const ru: Translations = {
+    header: {
+        welcome: 'Добро пожаловать в The Cliff Resort',
+        tagline: 'Ваш комфорт - наш приоритет',
+        connectWifi: 'Подключить WiFi',
+    },
+    services: {
+        home: 'Главная',
+        vistaRestaurant: 'Ресторан Vista',
+        bookTable: 'Забронировать стол',
+        zestSpa: 'Zest Spa',
+        frontDesk: 'Ресепшн',
+        housekeeping: 'Уборка номера',
+        bookRoom: 'Забронировать номер',
+        guestServices: 'Услуги для гостей',
+        activities: 'Развлечения',
+        shareMemory: 'Поделиться воспоминаниями',
+        socialMedia: 'Соцсети',
+    },
+    footer: {
+        hotline: 'Горячая линия',
+        copyright: '© 2026 The Cliff Resort. Все права защищены.',
+    },
+    wifi: {
+        title: 'Подключение к WiFi',
+        networkName: 'Название сети (SSID)',
+        password: 'Пароль',
+        copy: 'Копировать',
+        copied: 'Скопировано!',
+        howToConnect: 'Как подключиться:',
+        step1: 'Откройте Настройки на телефоне',
+        step2: 'Нажмите на WiFi',
+        step3: 'Выберите сеть',
+        step4: 'Введите пароль выше',
+        gotIt: 'Понятно!',
+    },
+    emergency: {
+        title: 'Экстренный вызов',
+        message: 'Вызвать охрану и медицинскую помощь?',
+        cancel: 'Отмена',
+        callNow: 'Позвонить',
+    },
+    social: {
+        title: 'Подписывайтесь на нас',
+        subtitle: 'Оставайтесь на связи с The Cliff Resort',
+        close: 'Закрыть',
+    },
+};

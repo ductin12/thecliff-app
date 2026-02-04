@@ -9,7 +9,7 @@ export const WIFI_CONFIG = {
 
 // Phone Numbers
 export const PHONE_NUMBERS = {
-  hotline: '+84 2523 719 111',
+  hotline: '1900 0394',
   frontDesk: '+84 2523 719 111',
   housekeeping: '+84 2523 719 111',
   security: '+84 2523 719 123',
@@ -33,6 +33,7 @@ export const EXTERNAL_URLS = {
 export const SOCIAL_LINKS = {
   facebook: 'https://www.facebook.com/TheCliffVietnam/',
   instagram: 'https://www.instagram.com/thecliffresort_official/',
+  youtube: 'https://www.youtube.com/@thecliffresort',
   zalo: 'https://zalo.me/thecliffresortmuine',
 } as const;
 

@@ -7,14 +7,15 @@ import ServiceGrid from '@/components/ServiceGrid';
 import Footer from '@/components/Footer';
 import WiFiModal from '@/components/WiFiModal';
 import EmergencyButton from '@/components/EmergencyButton';
-import SocialModal from '@/components/SocialModal';
+import HousekeepingModal from '@/components/HousekeepingModal';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { services } from '@/config/services';
 import { Service, Locale } from '@/types';
+import { SOCIAL_LINKS } from '@/lib/constants';
 
 export default function Home() {
   const [isWifiModalOpen, setIsWifiModalOpen] = useState(false);
-  const [isSocialModalOpen, setIsSocialModalOpen] = useState(false);
+  const [isHousekeepingModalOpen, setIsHousekeepingModalOpen] = useState(false);
   const [currentLocale, setCurrentLocale] = useState<Locale>('en');
 
   const handleWifiClick = useCallback(() => {
@@ -36,9 +37,12 @@ export default function Home() {
       case 'modal':
         if (service.modalType === 'wifi') {
           setIsWifiModalOpen(true);
-        } else if (service.modalType === 'social') {
-          setIsSocialModalOpen(true);
+        } else if (service.modalType === 'housekeeping') {
+          setIsHousekeepingModalOpen(true);
         }
+        break;
+      case 'zalo':
+        window.open(SOCIAL_LINKS.zalo, '_blank', 'noopener,noreferrer');
         break;
     }
   }, []);
@@ -72,9 +76,9 @@ export default function Home() {
           isOpen={isWifiModalOpen}
           onClose={() => setIsWifiModalOpen(false)}
         />
-        <SocialModal
-          isOpen={isSocialModalOpen}
-          onClose={() => setIsSocialModalOpen(false)}
+        <HousekeepingModal
+          isOpen={isHousekeepingModalOpen}
+          onClose={() => setIsHousekeepingModalOpen(false)}
         />
       </div>
     </I18nProvider>

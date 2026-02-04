@@ -1,7 +1,7 @@
 // Service types and interfaces
 
-export type ServiceAction = 'link' | 'phone' | 'modal';
-export type ModalType = 'wifi' | 'social';
+export type ServiceAction = 'link' | 'phone' | 'modal' | 'zalo';
+export type ModalType = 'wifi' | 'social' | 'housekeeping';
 export type Locale = 'en' | 'vi' | 'ru' | 'fr' | 'ko';
 
 export interface Service {
@@ -15,7 +15,7 @@ export interface Service {
 }
 
 export interface SocialLink {
-    platform: 'facebook' | 'instagram' | 'zalo';
+    platform: 'facebook' | 'instagram' | 'youtube';
     url: string;
     icon: string;
 }

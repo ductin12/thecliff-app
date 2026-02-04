@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -47,7 +48,27 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+
+        {/* Chatwoot Chat Widget */}
+        <Script id="chatwoot-widget" strategy="lazyOnload">
+          {`
+            (function(d,t) {
+              var BASE_URL="https://chat.thecliffresort.com.vn";
+              var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+              g.src=BASE_URL+"/packs/js/sdk.js";
+              g.async = true;
+              s.parentNode.insertBefore(g,s);
+              g.onload=function(){
+                window.chatwootSDK.run({
+                  websiteToken: 'HEv7vrvRpJ1k4Hiwb8vTUF9A',
+                  baseUrl: BASE_URL
+                })
+              }
+            })(document,"script");
+          `}
+        </Script>
       </body>
     </html>
   );
 }
+

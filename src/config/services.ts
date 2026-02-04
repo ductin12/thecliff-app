@@ -41,8 +41,8 @@ export const services: Service[] = [
         id: 'housekeeping',
         name: 'Housekeeping',
         icon: '🧹',
-        action: 'phone',
-        phone: PHONE_NUMBERS.housekeeping,
+        action: 'modal',
+        modalType: 'housekeeping',
     },
     {
         id: 'book-room',
@@ -73,10 +73,9 @@ export const services: Service[] = [
         url: EXTERNAL_URLS.guestBook,
     },
     {
-        id: 'social',
-        name: 'Social Media',
-        icon: '📱',
-        action: 'modal',
-        modalType: 'social',
+        id: 'zalo',
+        name: 'Zalo Chat',
+        icon: '💬',
+        action: 'zalo',
     },
 ];

@@ -46,6 +46,27 @@ export const en = {
         subtitle: 'Stay connected with The Cliff Resort',
         close: 'Close',
     },
+    housekeeping: {
+        title: 'Room Cleaning Request',
+        roomNumber: 'Room Number',
+        roomNumberPlaceholder: 'e.g., 101',
+        fullName: 'Full Name',
+        fullNamePlaceholder: 'Your name',
+        preferredTime: 'Preferred Time',
+        preferredTimePlaceholder: 'e.g., 10:00 AM',
+        notes: 'Additional Notes',
+        notesPlaceholder: 'Any special requests...',
+        submit: 'Submit Request',
+        submitting: 'Submitting...',
+        required: 'Required',
+        success: 'Request submitted successfully!',
+        successMessage: 'Our housekeeping team will attend to your room shortly.',
+        error: 'Failed to submit request',
+        errorMessage: 'Please try again or call Front Desk.',
+        tryAgain: 'Try Again',
+        close: 'Close',
+        newRequest: 'New Request',
+    },
 };
 
 export type Translations = typeof en;

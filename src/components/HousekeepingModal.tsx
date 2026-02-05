@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback, FormEvent } from 'react';
+import { useState, useEffect, useCallback, useRef, FormEvent } from 'react';
 import { useTranslation } from '@/i18n';
 
 interface HousekeepingModalProps {
@@ -19,16 +19,22 @@ export default function HousekeepingModal({ isOpen, onClose }: HousekeepingModal
     const [fullName, setFullName] = useState('');
     const [preferredTime, setPreferredTime] = useState('');
     const [notes, setNotes] = useState('');
+    const wasOpenRef = useRef(false);
 
-    // Reset form when modal opens
+    // Reset form when modal opens (using ref to track previous state)
     useEffect(() => {
-        if (isOpen) {
-            setFormState('idle');
-            setRoomNumber('');
-            setFullName('');
-            setPreferredTime('');
-            setNotes('');
+        if (isOpen && !wasOpenRef.current) {
+            // Modal just opened - schedule state reset for next render
+            const timeoutId = setTimeout(() => {
+                setFormState('idle');
+                setRoomNumber('');
+                setFullName('');
+                setPreferredTime('');
+                setNotes('');
+            }, 0);
+            return () => clearTimeout(timeoutId);
         }
+        wasOpenRef.current = isOpen;
     }, [isOpen]);
 
     // Close on escape key

@@ -1,0 +1,460 @@
+{
+  "buttons": [
+    {
+      "id": "home",
+      "name": {
+        "en": "Home",
+        "vi": "Trang chủ"
+      },
+      "icon": "🏠",
+      "action": "link",
+      "url": "https://thecliffresort.com.vn",
+      "position": "body",
+      "order": 1,
+      "enabled": true
+    },
+    {
+      "id": "vista",
+      "name": {
+        "en": "Vista Restaurant",
+        "vi": "Nhà hàng Vista"
+      },
+      "icon": "🍽️",
+      "action": "link",
+      "url": "https://thecliffresort.com.vn/vista-restaurant/",
+      "position": "body",
+      "order": 2,
+      "enabled": true
+    },
+    {
+      "id": "book-table",
+      "name": {
+        "en": "Book Table",
+        "vi": "Đặt bàn"
+      },
+      "icon": "📅",
+      "action": "link",
+      "url": "https://thecliffresort.com.vn/vista-restaurant/#booking",
+      "position": "body",
+      "order": 3,
+      "enabled": true
+    },
+    {
+      "id": "spa",
+      "name": {
+        "en": "Zest Spa",
+        "vi": "Zest Spa"
+      },
+      "icon": "💆",
+      "action": "link",
+      "url": "https://thecliffresort.com.vn/zest-spa/",
+      "position": "body",
+      "order": 4,
+      "enabled": true
+    },
+    {
+      "id": "front-desk",
+      "name": {
+        "en": "Front Desk",
+        "vi": "Lễ tân"
+      },
+      "icon": "🛎️",
+      "action": "phone",
+      "phone": "+84 2523 719 111",
+      "position": "body",
+      "order": 5,
+      "enabled": true
+    },
+    {
+      "id": "housekeeping",
+      "name": {
+        "en": "Housekeeping",
+        "vi": "Dọn phòng"
+      },
+      "icon": "🧹",
+      "action": "modal",
+      "modalType": "housekeeping",
+      "position": "body",
+      "order": 6,
+      "enabled": true
+    },
+    {
+      "id": "book-room",
+      "name": {
+        "en": "Book Room",
+        "vi": "Đặt phòng"
+      },
+      "icon": "🛏️",
+      "action": "link",
+      "url": "https://thecliffresort.com.vn/rooms/",
+      "position": "body",
+      "order": 7,
+      "enabled": true
+    },
+    {
+      "id": "services",
+      "name": {
+        "en": "Guest Services",
+        "vi": "Dịch vụ khách"
+      },
+      "icon": "ℹ️",
+      "action": "link",
+      "url": "https://thecliffresort.com.vn/contact/",
+      "position": "body",
+      "order": 8,
+      "enabled": true
+    },
+    {
+      "id": "activities",
+      "name": {
+        "en": "Activities",
+        "vi": "Hoạt động"
+      },
+      "icon": "🏊",
+      "action": "link",
+      "url": "https://thecliffresort.com.vn/blogs/",
+      "position": "body",
+      "order": 9,
+      "enabled": true
+    },
+    {
+      "id": "gallery",
+      "name": {
+        "en": "Share Memory",
+        "vi": "Chia sẻ kỷ niệm"
+      },
+      "icon": "📸",
+      "action": "link",
+      "url": "https://thecliffresort.com.vn/guest-book/",
+      "position": "body",
+      "order": 10,
+      "enabled": true
+    },
+    {
+      "id": "zalo",
+      "name": {
+        "en": "Zalo Chat",
+        "vi": "Chat Zalo"
+      },
+      "icon": "💬",
+      "action": "zalo",
+      "position": "body",
+      "order": 11,
+      "enabled": true
+    }
+  ],
+  "phoneNumbers": [
+    {
+      "id": "hotline",
+      "label": {
+        "en": "Hotline",
+        "vi": "Hotline"
+      },
+      "number": "1900 0394",
+      "type": "hotline",
+      "displayInFooter": true,
+      "order": 1,
+      "enabled": true
+    },
+    {
+      "id": "front-desk",
+      "label": {
+        "en": "Front Desk",
+        "vi": "Lễ tân"
+      },
+      "number": "+84 2523 719 111",
+      "type": "frontdesk",
+      "displayInFooter": true,
+      "order": 2,
+      "enabled": true
+    },
+    {
+      "id": "housekeeping",
+      "label": {
+        "en": "Housekeeping",
+        "vi": "Dọn phòng"
+      },
+      "number": "+84 2523 719 111",
+      "type": "housekeeping",
+      "displayInFooter": false,
+      "order": 3,
+      "enabled": true
+    },
+    {
+      "id": "security",
+      "label": {
+        "en": "Security",
+        "vi": "An ninh"
+      },
+      "number": "+84 2523 719 123",
+      "type": "security",
+      "displayInFooter": false,
+      "order": 4,
+      "enabled": true
+    },
+    {
+      "id": "emergency",
+      "label": {
+        "en": "Emergency",
+        "vi": "Khẩn cấp"
+      },
+      "number": "+84 2523 719 123",
+      "type": "emergency",
+      "displayInFooter": false,
+      "order": 5,
+      "enabled": true
+    }
+  ],
+  "socialLinks": [
+    {
+      "id": "facebook",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/TheCliffVietnam/",
+      "displayInFooter": true,
+      "order": 1,
+      "enabled": true
+    },
+    {
+      "id": "instagram",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/thecliffresort_official/",
+      "displayInFooter": true,
+      "order": 2,
+      "enabled": true
+    },
+    {
+      "id": "youtube",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/@thecliffresort",
+      "displayInFooter": true,
+      "order": 3,
+      "enabled": true
+    },
+    {
+      "id": "zalo",
+      "platform": "zalo",
+      "url": "https://zalo.me/thecliffresortmuine",
+      "displayInFooter": true,
+      "order": 4,
+      "enabled": true
+    }
+  ],
+  "webhooks": [],
+  "formSubmissions": {
+    "housekeeping": [],
+    "orderfood": [],
+    "survey": [
+      {
+        "id": "1770272261946-pmlfnd3",
+        "status": "pending",
+        "createdAt": "2026-02-05T06:17:41.946Z",
+        "roomNumber": "501",
+        "guestName": "Test User Survey",
+        "type": "survey",
+        "phone": "+84999888777",
+        "email": "test@survey.com",
+        "rating": 4,
+        "criteriaRatings": {
+          "room": 5,
+          "staff": 4
+        },
+        "feedback": "Testing data save"
+      }
+    ]
+  },
+  "analytics": {
+    "pageViews": [
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770266063678-z5f4zem",
+        "timestamp": "2026-02-05T04:34:23.678Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770266185831-5kx9ckm",
+        "timestamp": "2026-02-05T04:36:25.831Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770266204135-y0prv1t",
+        "timestamp": "2026-02-05T04:36:44.135Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770267339806-g1cf9oi",
+        "timestamp": "2026-02-05T04:55:39.806Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770269174719-2a202b4",
+        "timestamp": "2026-02-05T05:26:14.719Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770269809660-kugtapi",
+        "timestamp": "2026-02-05T05:36:49.661Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770270049093-6ow1nuz",
+        "timestamp": "2026-02-05T05:40:49.093Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770272191412-9zb04vd",
+        "timestamp": "2026-02-05T06:16:31.412Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770272436871-d5rckvf",
+        "timestamp": "2026-02-05T06:20:36.871Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770272946920-mkgfpmo",
+        "timestamp": "2026-02-05T06:29:06.920Z"
+      },
+      {
+        "type": "page_view",
+        "target": "home",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770272948503-qx492ge",
+        "timestamp": "2026-02-05T06:29:08.503Z"
+      }
+    ],
+    "buttonClicks": [
+      {
+        "type": "button_click",
+        "target": "vista",
+        "metadata": {
+          "name": "Vista Restaurant"
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770266070054-ow9dhmh",
+        "timestamp": "2026-02-05T04:34:30.054Z"
+      },
+      {
+        "type": "button_click",
+        "target": "front-desk",
+        "metadata": {
+          "name": "Front Desk"
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770266086289-zwfzcfs",
+        "timestamp": "2026-02-05T04:34:46.289Z"
+      },
+      {
+        "type": "button_click",
+        "target": "vista",
+        "metadata": {
+          "name": "Vista Restaurant"
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770266213815-3oaxcnl",
+        "timestamp": "2026-02-05T04:36:53.815Z"
+      },
+      {
+        "type": "button_click",
+        "target": "front-desk",
+        "metadata": {
+          "name": "Front Desk"
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770266223476-tvkf8j8",
+        "timestamp": "2026-02-05T04:37:03.476Z"
+      },
+      {
+        "type": "button_click",
+        "target": "housekeeping",
+        "metadata": {
+          "name": "Housekeeping"
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770269174820-2rkxue1",
+        "timestamp": "2026-02-05T05:26:14.820Z"
+      },
+      {
+        "type": "button_click",
+        "target": "survey",
+        "metadata": {
+          "name": "Rate Your Stay"
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770270015584-xdz1qef",
+        "timestamp": "2026-02-05T05:40:15.584Z"
+      },
+      {
+        "type": "button_click",
+        "target": "survey",
+        "metadata": {
+          "name": "Rate Your Stay"
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770270050187-iptyocl",
+        "timestamp": "2026-02-05T05:40:50.187Z"
+      },
+      {
+        "type": "button_click",
+        "target": "survey",
+        "metadata": {
+          "name": "Rate Your Stay"
+        },
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "locale": "en",
+        "id": "1770272200212-n05v9jg",
+        "timestamp": "2026-02-05T06:16:40.212Z"
+      }
+    ]
+  },
+  "settings": {
+    "wifiSsid": "Thecliff",
+    "wifiPassword": "123456",
+    "wifiSecurityType": "WPA",
+    "defaultLocale": "en",
+    "supportedLocales": [
+      "en",
+      "vi",
+      "ru",
+      "fr",
+      "ko"
+    ]
+  }
+}

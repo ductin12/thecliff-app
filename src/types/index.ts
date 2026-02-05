@@ -1,7 +1,7 @@
 // Service types and interfaces
 
 export type ServiceAction = 'link' | 'phone' | 'modal' | 'zalo';
-export type ModalType = 'wifi' | 'social' | 'housekeeping';
+export type ModalType = 'wifi' | 'social' | 'housekeeping' | 'survey';
 export type Locale = 'en' | 'vi' | 'ru' | 'fr' | 'ko';
 
 export interface Service {

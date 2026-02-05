@@ -73,6 +73,13 @@ export const services: Service[] = [
         url: EXTERNAL_URLS.guestBook,
     },
     {
+        id: 'survey',
+        name: 'Rate Your Stay',
+        icon: '⭐',
+        action: 'modal',
+        modalType: 'survey',
+    },
+    {
         id: 'zalo',
         name: 'Zalo Chat',
         icon: '💬',

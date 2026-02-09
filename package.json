@@ -11,10 +11,11 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "next": "16.1.6",
+    "next-intl": "^4.1.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "next-intl": "^4.1.0"
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
